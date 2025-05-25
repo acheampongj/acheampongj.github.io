@@ -182,8 +182,90 @@
     </tr>
           </tbody></table>
 
-          <!--Personal Projects-->
+          <!-- Personal Projects Section -->
+          <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+            <tr>
+              <td>
+                <h2>Personal Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+            <tr onmouseout="project1_stop()" onmouseover="project1_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='project1_image'><video width=100% height=100% muted autoplay loop>
+                  <source src="images/project1_demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/project1_thumbnail.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function project1_start() {
+                    document.getElementById('project1_image').style.opacity = "1";
+                  }
+
+                  function project1_stop() {
+                    document.getElementById('project1_image').style.opacity = "0";
+                  }
+                  project1_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="#">
+                  <span class="papertitle">Project Name 1</span>
+                </a>
+                <br>
+                <a href="https://github.com/username/project1">github</a>
+                /
+                <a href="#">demo</a>
+                <p></p>
+                <p>
+                  Description of your first personal project. This is where you can explain what the project does, what technologies were used, and what problems it solves.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="project2_stop()" onmouseover="project2_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='project2_image'><video width=100% height=100% muted autoplay loop>
+                  <source src="images/project2_demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/project2_thumbnail.jpg' width="160">
+                </div>
+                <script type="text/javascript">
+                  function project2_start() {
+                    document.getElementById('project2_image').style.opacity = "1";
+                  }
+
+                  function project2_stop() {
+                    document.getElementById('project2_image').style.opacity = "0";
+                  }
+                  project2_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="#">
+                  <span class="papertitle">Project Name 2</span>
+                </a>
+                <br>
+                <a href="https://github.com/username/project2">github</a>
+                /
+                <a href="#">demo</a>
+                <p></p>
+                <p>
+                  Description of your second personal project. This section can highlight your skills, the challenges you overcame, and any interesting implementation details.
+                </p>
+              </td>
+            </tr>
+
+          </tbody></table>
+
           <!--Miscellaneous Secion-->
+          <!--
           <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
             <tr>
               <td>
@@ -193,7 +275,7 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
-          <!--
+          
             <tr>
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
 						     <div class="colored-box" style="background-color: #fcb97d;">
