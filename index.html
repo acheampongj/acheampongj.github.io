@@ -113,34 +113,35 @@
 
 
           <!-- Personal Projects Section -->
-          <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
-            <tr>
-              <td>
-                <h2>Personal Projects</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;">
+            <tbody>
+              <tr>
+                <td>
+                  <h2>Personal Projects</h2>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-            <tr onmouseout="project1_stop()" onmouseover="project1_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='project1_image'><video width=100% height=100% muted autoplay loop>
-                  <source src="images/swing.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div>
-                  <img src='images/swing.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function project1_start() {
-                    document.getElementById('project1_image').style.opacity = "1";
-                  }
+          <table style="width:100%;border:0;border-spacing:0 10px;border-collapse:separate;margin:auto;">
+            <tbody>
 
-                  function project1_stop() {
-                    document.getElementById('project1_image').style.opacity = "0";
-                  }
-                  project1_stop()
-                </script>
+              <!-- PROJECT 1 -->
+              <tr>
+                <td style="padding:16px;width:20%;vertical-align:middle">
+
+                  <!-- VIDEO (AUTO PLAY) -->
+                  <div style="width:160px;height:120px;overflow:hidden;border-radius:10px;">
+                    <video 
+                      autoplay 
+                      muted 
+                      loop 
+                      playsinline
+                      style="width:100%;height:100%;object-fit:cover;">
+                      <source src="images/swing.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="#">
