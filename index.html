@@ -110,64 +110,38 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 <!-- Publication #1 -->
-<tr onmouseout="vbanana_stop()" onmouseover="vbanana_start()" bgcolor="#ffffd0">
+<tr>
   <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='vbanana_image'>
-        <img src='images/vbanana_after.jpg' width=100%>
-      </div>
-      <img src='images/vbanana_before.jpg' width=100%>
+    <div class="one" style="width:160px;height:120px;position:relative;">
+      <img src='images/swing.png' width="160" height="120" style="display:block;border-radius:10px;object-fit:cover;">
     </div>
-    <script type="text/javascript">
-      function vbanana_start() {
-        document.getElementById('vbanana_image').style.opacity = "1";
-      }
-
-      function vbanana_stop() {
-        document.getElementById('vbanana_image').style.opacity = "0";
-      }
-      vbanana_stop()
-    </script>
   </td>
   <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://vision-banana.github.io/">
-      <span class="papertitle">Image Generators are Generalist Vision Learners</span>
+    <a href="https://m-and-m-lab.github.io/PhyGS/">
+      <span class="papertitle">PhyGS: Physically-Grounded Controllable Scene Generation</span>
     </a>
     <br>
-    <a href="https://gabeur.github.io/">Valentin Gabeur</a>,
-    <a href="https://scholar.google.com/scholar?q=Shangbang+Long">Shangbang Long</a>,
-    <a href="https://pengsongyou.github.io/">Songyou Peng</a>,
-    <a href="https://scholar.google.com/scholar?q=Paul+Voigtlaender">Paul Voigtlaender</a>,
-    <a href="https://kevinshuyangsun.github.io/">Shuyang Sun</a>,
-    <a href="https://scholar.google.com/scholar?q=Yanan+Bao">Yanan Bao</a>,
-    <a href="https://scholar.google.com/scholar?q=Karen+Truong">Karen Truong</a>,
-    <a href="https://scholar.google.com/scholar?q=Zhicheng+Wang">Zhicheng Wang</a>,
-    <a href="https://scholar.google.com/scholar?q=Wenlei+Zhou">Wenlei Zhou</a>,
-    <strong>Jonathan T. Barron</strong>,
-    <a href="https://kylegenova.com/">Kyle Genova</a>,
-    <a href="https://scholar.google.com/scholar?q=Nithish+Kannen">Nithish Kannen</a>,
-    <a href="https://scholar.google.com/scholar?q=Sherry+Ben">Sherry Ben</a>,
-    <a href="https://scholar.google.com/scholar?q=Yandong+Li">Yandong Li</a>,
-    <a href="https://scholar.google.com/scholar?q=Mandy+Guo">Mandy Guo</a>,
-    <a href="https://scholar.google.com/scholar?q=Suhas+Yogin">Suhas Yogin</a>,
-    <a href="https://scholar.google.com/scholar?q=Yiming+Gu">Yiming Gu</a>,
-    <a href="https://scholar.google.com/scholar?q=Huizhong+Chen">Huizhong Chen</a>,
-    <a href="https://www.oliverwang.info/">Oliver Wang</a>,
-    <a href="https://sainingxie.com/">Saining Xie</a>,
-    <a href="https://scholar.google.com/scholar?q=Howard+Zhou">Howard Zhou</a>,
-    <a href="https://kaiminghe.github.io/">Kaiming He</a>,
-    <a href="https://www.cs.princeton.edu/~funk/">Thomas Funkhouser</a>,
-    <a href="https://www.jbalayrac.com/">Jean-Baptiste Alayrac</a>,
-    <a href="https://research.google/people/radu-soricut/">Radu Soricut</a>
+    <a href="https://aparajitosaha.github.io" target="_blank" rel="noopener">Aparajito Saha</a>,
+    <a href="https://ganzh6880.github.io" target="_blank" rel="noopener">Zhen Hao Gan</a>,
+    Jinjia Guo,
+    Jacob Skwirsk,
+    <strong>Jeremy Acheampong</strong>,
+    <a href="https://anton-arapin.github.io" target="_blank" rel="noopener">Anton Arapin</a>,
+    <a href="https://chahyon-ku.github.io" target="_blank" rel="noopener">Chahyon Ku</a>,
+    <a href="https://phyllish.github.io" target="_blank" rel="noopener">Yue Hu</a>,
+    <a href="https://www.mmintlab.com/people/nima-fazeli/" target="_blank" rel="noopener">Nima Fazeli</a>,
+    <a href="https://bucherb.github.io" target="_blank" rel="noopener">Bernadette Bucher</a>
     <br>
-    <em>arXiv</em>, 2026
+    <em>CVPR MEIS Workshop</em>, 2026
     <br>
-    <a href="https://vision-banana.github.io/">project page</a>
+    <a href="https://m-and-m-lab.github.io/PhyGS/">project page</a>
     /
-    <a href="https://arxiv.org/abs/2604.20329">arXiv</a>
+    <a href="https://github.com/m-and-m-lab/PhyGS">code</a>
+    /
+    <a href="https://m-and-m-lab.github.io/ForageBench/">ForageBench</a>
     <p></p>
     <p>
-    Reducing monodepth, normals, and semantic segmentation tasks to a single RGB-image-prediction task and fine-tuning an image generator (Nano Banana Pro) beats or ~matches specialized models.
+      PhyGS generates photorealistic, physically interactable, building-scale indoor scenes in IsaacSim and includes a Boston Dynamics Spot hardware abstraction for sim-to-real transfer.
     </p>
   </td>
 </tr>
