@@ -128,13 +128,14 @@
               <tr>
                 <td style="padding:16px;width:20%;vertical-align:middle">
 
-                  <!-- VIDEO (AUTO PLAY) -->
-                  <div style="width:160px;height:120px;overflow:hidden;border-radius:10px;">
+                  <!-- VIDEO (PLAYS ON HOVER) -->
+                  <div id="project-video-wrapper" style="width:160px;height:120px;overflow:hidden;border-radius:10px;">
                     <video 
-                      autoplay 
-                      muted 
-                      loop 
+                      id="project-video"
+                      muted
+                      loop
                       playsinline
+                      preload="metadata"
                       style="width:100%;height:100%;object-fit:cover;">
                       <source src="images/swing.mp4" type="video/mp4">
                       Your browser does not support the video tag.
@@ -206,5 +207,24 @@
         </td>
       </tr>
     </table>
+
+    <script>
+      const projectVideo = document.getElementById('project-video');
+      const projectVideoWrapper = document.getElementById('project-video-wrapper');
+
+      if (projectVideo && projectVideoWrapper) {
+        projectVideo.pause();
+        projectVideo.currentTime = 0;
+
+        projectVideoWrapper.addEventListener('mouseenter', () => {
+          projectVideo.play().catch(() => {});
+        });
+
+        projectVideoWrapper.addEventListener('mouseleave', () => {
+          projectVideo.pause();
+          projectVideo.currentTime = 0;
+        });
+      }
+    </script>
   </body>
 </html>
