@@ -202,7 +202,8 @@
                         muted
                         loop
                         playsinline
-                        preload="none"
+                        preload="metadata"
+                        poster="images/swing.png"
                         style="width:100%;height:100%;object-fit:cover;">
                         Your browser does not support the video tag.
                       </video>
@@ -284,17 +285,22 @@
       if (projectVideo && projectVideoImage && projectHover) {
         projectVideo.pause();
         projectVideo.currentTime = 0;
+        projectVideo.preload = 'metadata';
 
         const loadProjectVideo = () => {
-          if (!projectVideo.getAttribute('src')) {
-            projectVideo.setAttribute('src', 'images/swing.mp4');
-            projectVideo.load();
+          if (projectVideo.dataset.loaded === 'true') {
+            return;
           }
+
+          projectVideo.src = 'images/swing.mp4';
+          projectVideo.dataset.loaded = 'true';
+          projectVideo.load();
         };
 
         projectHover.addEventListener('mouseenter', () => {
           loadProjectVideo();
           projectVideoImage.style.opacity = '1';
+          projectVideo.currentTime = 0;
           projectVideo.play().catch(() => {});
         });
 
